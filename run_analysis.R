@@ -117,7 +117,7 @@ resultsData <- cbind(SubjTestdata, Ytestdata)
 #bind the final results with only std and mean cols from Xdata input
 resultsData <- cbind(resultsData, stdmeanTestData)
 
-
+write.table(resultsData, "./Data/resultsData.txt", row.names = FALSE)
 
 
 
